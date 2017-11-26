@@ -1,19 +1,17 @@
-//import * as assert from "assert";
-
+var assert = require('assert');
 var mathClass = require('../math');
 
 suite('The extension manager NodeTDD', () => {
-  
-      test('correctly returns a singleton instance', (done) => {
-          assert.equal(mathClass.sum(10, 10), "15");
-          done();
-        });
-
-      test('correctly returns a singleton instance', (done) => {
-        assert.equal(mathClass.multiply(10, 10), "90");
-        done();
+  test('sum two numbers', (done) => {
+      assert.equal(mathClass.sum(10, 10), "15");
+      done();
     });
+
+  test('multiply two numbers', (done) => {
+    assert.equal(mathClass.multiply(10, 10), 100);
+    done();
   });
+});
 
 // describe('Math Module', () => {
 //     describe('Sum method', () => {
