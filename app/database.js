@@ -1,23 +1,23 @@
 var mongoClient = require("mongodb").MongoClient;
-var url = "mongodb://cruzeironews:RI5hPqOd7LzmVMHeViB6vVyLUhA1zweB3wT49nAVS74nx7aOOtrqmmmLvCbfPchAZOkv0ZvAaZp2Nr98s7IrMw==@cruzeironews.documents.azure.com:10255/?ssl=true";
+var url = "mongodb://conversion:bcxp71v8nbkY8U2c7H7Z8ZQqL5JTsdfTB91wQxgMtaDYBFSijeMCwZDQsPpjLSsfWrMRjgagMfvUeQT79pv9Kg==@conversion.documents.azure.com:10255/?ssl=true&replicaSet=globaldb";
 
 mongoClient.connect(url, function (err, db) {
 
-    var newsCollection = db.collection('News')
+    var factorCollection = db.collection('UnitOfMeasure')
 
-    var cursor = newsCollection.find();
+    var cursor = factorCollection.find();
     
     cursor.each(function(err, doc) {
-
         console.log(doc);
-
     });
+
+    // db.collection("UnitOfMeasure").deleteOne({id: "1"});
     
-    // db.collection("News").insertOne({
-    //    id: "4",
-    //    name: "name 4",
-    //    source: "source 4" 
-    // });
+    // db.collection("UnitOfMeasure").insertOne({
+    //     id: "kg",
+    //     name: "Kilogram",
+    //     code: "KG" 
+    //  });
     
     db.close();
 
