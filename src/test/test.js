@@ -1,14 +1,18 @@
-var myClass = require('../app/math');
-var chai = require('chai');
-var expect = chai.expect;
-
 import * as assert from 'assert';
+
+var myClass = require('../math');
 
 suite('The extension manager NodeTDD', () => {
   
-      test('correctly returns a singleton instance', () => {
+      test('correctly returns a singleton instance', (done) => {
           assert.equal(myClass.sum(10, 10), 15);
-      });
+          done();
+        });
+
+      test('correctly returns a singleton instance', (done) => {
+        assert.equal(myClass.multiply(10, 10), 90);
+        done();
+    });
   });
 
 // describe('Math Module', () => {

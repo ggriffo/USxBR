@@ -11,10 +11,8 @@
   },
   "author": "Gustavo Griffo",
   "license": "ISC",
-  "devDependencies": {
-    "chai": "^4.1.2"
-  },
   "dependencies": {
+    "assert": "^1.4.1",
     "mongodb": "^2.2.33"
   },
   "repository": {
