@@ -1,0 +1,31 @@
+[ERR!] cwd  : /Users/gustavogriffo/Desktop/Projects/first-node-project
+[ERR!] os   : Darwin 16.7.0
+[ERR!] argv : "/usr/local/bin/node" "/usr/local/bin/tsd" "query"
+[ERR!] node : v8.9.1
+[ERR!] tsd  : 0.6.5
+[ERR!] Error: pass at least one query pattern
+[ERR!] CODE : undefined
+[ERR!] pass at least one query pattern
+[ERR!] If you need help, you may report this error at:
+    https://github.com/DefinitelyTyped/tsd/issues
+
+[ERR!] 
+VError: pass at least one query pattern
+    at /usr/local/lib/node_modules/tsd/build/tsd/CLI.js:113:23
+    at tryCatch1 (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/util.js:63:19)
+    at Promise$_callHandler [as _callHandler] (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/promise.js:695:13)
+    at Promise$_settlePromiseFromHandler [as _settlePromiseFromHandler] (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/promise.js:711:18)
+    at Promise$_settlePromiseAt [as _settlePromiseAt] (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/promise.js:868:14)
+    at Promise$_settlePromises [as _settlePromises] (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/promise.js:1006:14)
+    at Async$_consumeFunctionBuffer [as _consumeFunctionBuffer] (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/async.js:74:12)
+    at Async$consumeFunctionBuffer (/usr/local/lib/node_modules/tsd/node_modules/bluebird/js/main/async.js:37:14)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[ERR!] tsd.json could not be retrieved
+
+[ERR!] .tsdrc could not be retrieved
+
+[ERR!] Please include the following file with any support request:
+    /Users/gustavogriffo/Desktop/Projects/first-node-project/tsd-debug.log
+

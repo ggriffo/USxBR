@@ -1,0 +1,20 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "First node project with TDD",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test tests/test.js"
+  },
+  "author": "Gustavo Griffo",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.33"
+  }
+}
