@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "test tests/test.js"
+    "test": "test src/test/*.js"
   },
   "author": "Gustavo Griffo",
   "license": "ISC",
@@ -16,5 +16,9 @@
   },
   "dependencies": {
     "mongodb": "^2.2.33"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggriffo/USxBR.git"
   }
 }
